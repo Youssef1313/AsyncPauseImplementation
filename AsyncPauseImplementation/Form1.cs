@@ -33,7 +33,7 @@ namespace AsyncPauseImplementation
             for (var i = 0; i < urls.Length; i++)
             {
                 // ToDo: Check if user requested to pause operation, change button text to resume, wait here until user click resume and back the button text to pause.
-                var result = await DownloadContentAsync(urls[i]).ConfigureAwait(true); // Because next lines are interacting with UI. (Thanks for your video ^_^)
+                var result = await DownloadContentAsync(urls[i]).ConfigureAwait(true); // Because next lines are interacting with UI. (Thanks for your video ^_^) https://www.youtube.com/watch?v=av5YNd4X3dY
                 File.WriteAllText($"D:\\{i}.txt", result);
                 AddToLog($"Downloaded web contents for {urls[i]}");
             }
